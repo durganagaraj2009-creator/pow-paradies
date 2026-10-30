@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAWSPHERE | Festive Pet Carnival & Care Boutique 2026</title>
+    <meta name="description" content="Shop organic pet food, luxury toys, beds, and book expert vet grooming sessions at PAWSPHERE Festive Pet Carnival.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="container announcement-content">
+            <p><i class="fa-solid fa-paw"></i> ANNUAL FESTIVE PET CARNIVAL 2026 — UP TO 50% OFF + FREE EXPRESS DELIVERY!</p>
+            <div class="top-contacts">
+                <span><i class="fa-solid fa-phone"></i> +91 (800) 729-7743</span>
+                <span><i class="fa-solid fa-location-dot"></i> Store Locator</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <i class="fa-solid fa-paw logo-icon"></i>
+                <span class="logo-text">PAWS<span class="logo-accent">PHERE</span></span>
+            </a>
+
+            <!-- Search Bar -->
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search organic food, toys, grooming...">
+                <button id="searchBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#shop" class="nav-link">Shop</a></li>
+                    <li><a href="#categories" class="nav-link">Categories</a></li>
+                    <li><a href="#services" class="nav-link">Grooming & Vet</a></li>
+                    <li><a href="#adoption" class="nav-link">Adoption</a></li>
+                    <li><a href="#offers" class="nav-link">Offers</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Action Icons -->
+            <div class="header-actions">
+                <button class="action-btn" id="wishlistToggleBtn" title="Wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="badge" id="wishlistCount">0</span>
+                </button>
+                <button class="action-btn" id="cartToggleBtn" title="Shopping Cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="badge" id="cartCount">0</span>
+                </button>
+                <button class="btn btn-primary btn-sm header-cta" id="openBookingModalBtn">
+                    <i class="fa-regular fa-calendar-check"></i> Book Session
+                </button>
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Overlay backdrop for drawer & modals -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Hero Banner -->
+    <section class="hero-section" id="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge-tag"><i class="fa-solid fa-sparkles"></i> FESTIVE PET CARNIVAL — UP TO 50% OFF</span>
+                <h1 class="hero-title">Paws, Claws & <span class="text-gradient">Endless Love!</span></h1>
+                <p class="hero-subtitle">Treat your furry family members to vet-approved organic nutrition, orthopedic beds, handcrafted toys, and luxury spa care.</p>
+                <div class="hero-actions">
+                    <a href="#shop" class="btn btn-primary"><i class="fa-solid fa-basket-shopping"></i> Shop Essentials</a>
+                    <a href="#services" class="btn btn-secondary"><i class="fa-solid fa-scissors"></i> Book Grooming</a>
+                </div>
+                <div class="hero-trust-badges">
+                    <div class="trust-item"><i class="fa-solid fa-shield-cat"></i> 100% Organic</div>
+                    <div class="trust-item"><i class="fa-solid fa-truck-fast"></i> 2-Hour Express</div>
+                    <div class="trust-item"><i class="fa-solid fa-user-doctor"></i> Vet Certified</div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="image-bg-blob"></div>
+                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=1000&q=80" alt="Happy Dog and Cat together" class="hero-img">
+                <div class="hero-floating-card">
+                    <i class="fa-solid fa-star text-gold"></i>
+                    <div>
+                        <strong>4.9 / 5.0 Rating</strong>
+                        <p>Trusted by 15,000+ Pet Parents</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotional Offers Section -->
+    <section class="section offers-section" id="offers">
+        <div class="container">
+            <div class="grid grid-3">
+                <div class="promo-card promo-1">
+                    <span class="promo-tag">FLAT 30% OFF</span>
+                    <h3>Organic Pet Foods & Treats</h3>
+                    <p>Grain-free, high-protein nutrition for optimal pet vitality.</p>
+                    <a href="#shop" class="promo-link">Claim Offer <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="promo-card promo-2">
+                    <span class="promo-tag">FLAT 40% OFF</span>
+                    <h3>Luxury Beds & Play Harnesses</h3>
+                    <p>Orthopedic memory foam and ergonomic durable harnesses.</p>
+                    <a href="#shop" class="promo-link">Explore Gear <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="promo-card promo-3">
+                    <span class="promo-tag">FLAT 20% OFF</span>
+                    <h3>First Vet Spa & Checkup</h3>
+                    <p>Full aromatherapy bath, claw trimming & wellness check.</p>
+                    <button class="promo-link-btn open-booking-trigger">Book Appointment <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories Section -->
+    <section class="section categories-section" id="categories">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-sub">Tailored Care</span>
+                <h2 class="section-title">Explore Featured Categories</h2>
+            </div>
+            <div class="grid grid-4">
+                <div class="category-card" data-category="Dogs">
+                    <div class="category-img-box">
+                        <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=600&q=80" alt="Dog Essentials">
+                    </div>
+                    <div class="category-info">
+                        <h3>Dog Essentials</h3>
+                        <p>120+ Organic Foods, Toys & Leashes</p>
+                    </div>
+                </div>
+                <div class="category-card" data-category="Cats">
+                    <div class="category-img-box">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&q=80" alt="Cat Kingdom">
+                    </div>
+                    <div class="category-info">
+                        <h3>Cat Kingdom</h3>
+                        <p>95+ Scratchers, Litter & Wet Food</p>
+                    </div>
+                </div>
+                <div class="category-card" data-category="Grooming">
+                    <div class="category-img-box">
+                        <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=600&q=80" alt="Grooming & Spa">
+                    </div>
+                    <div class="category-info">
+                        <h3>Grooming & Spa</h3>
+                        <p>Organic Shampoos, Brushes & Kits</p>
+                    </div>
+                </div>
+                <div class="category-card" data-category="Healthcare">
+                    <div class="category-img-box">
+                        <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=600&q=80" alt="Health & Wellness">
+                    </div>
+                    <div class="category-info">
+                        <h3>Health & Wellness</h3>
+                        <p>Supplements, Flea Care & Dental</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Products Section -->
+    <section class="section products-section" id="shop">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <span class="section-sub">Bestselling Essentials</span>
+                    <h2 class="section-title">Trending Pet Products</h2>
+                </div>
+                <!-- Filter Tabs -->
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">All Products</button>
+                    <button class="filter-btn" data-filter="Dogs">Dogs</button>
+                    <button class="filter-btn" data-filter="Cats">Cats</button>
+                    <button class="filter-btn" data-filter="Grooming">Grooming</button>
+                    <button class="filter-btn" data-filter="Healthcare">Health</button>
+                </div>
+            </div>
+
+            <div class="grid grid-4" id="productGrid">
+                <!-- Product cards rendered dynamically via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown & Adoption Section -->
+    <section class="section timer-adoption-section" id="adoption">
+        <div class="container">
+            <div class="timer-adoption-card">
+                <div class="timer-column">
+                    <span class="badge-tag gold-badge"><i class="fa-solid fa-clock"></i> LIMITED TIME EVENT</span>
+                    <h2>Festive Carnival Sale Ends In:</h2>
+                    <div class="countdown-container" id="countdown">
+                        <div class="time-block"><span id="days">00</span><p>Days</p></div>
+                        <div class="time-block"><span id="hours">00</span><p>Hours</p></div>
+                        <div class="time-block"><span id="minutes">00</span><p>Mins</p></div>
+                        <div class="time-block"><span id="seconds">00</span><p>Secs</p></div>
+                    </div>
+                </div>
+                <div class="divider-vertical"></div>
+                <div class="adoption-column">
+                    <span class="badge-tag mint-badge"><i class="fa-solid fa-heart"></i> ADOPT DON'T SHOP</span>
+                    <h2>Find a Forever Friend Today</h2>
+                    <p>Over 30 rescued puppies and kittens are waiting for a loving home this festive season. Every adoption comes with a free Starter Food Kit!</p>
+                    <button class="btn btn-mint" id="openAdoptionModalBtn"><i class="fa-solid fa-paw"></i> View Adoptable Pets</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Care Services Section -->
+    <section class="section services-section" id="services">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-sub">Professional Care</span>
+                <h2 class="section-title">Vet-Certified Care Services</h2>
+            </div>
+            <div class="grid grid-3">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-bath"></i></div>
+                    <h3>Full Spa & Grooming</h3>
+                    <p>Includes organic coat wash, blow-dry, claw clipping, ear cleaning, and scented leave-in conditioner.</p>
+                    <button class="btn btn-outline service-book-btn" data-service="Grooming">Book Grooming</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-stethoscope"></i></div>
+                    <h3>In-Clinic & Home Vet Visit</h3>
+                    <p>Comprehensive physical health examinations, vaccinations, nutrition planning, and dental checks.</p>
+                    <button class="btn btn-outline service-book-btn" data-service="Vet Consult">Book Vet Visit</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-house-chimney-window"></i></div>
+                    <h3>Luxury Daycare & Boarding</h3>
+                    <p>Temperature-controlled private suites, active play sessions, 24/7 webcams, and customized meals.</p>
+                    <button class="btn btn-outline service-book-btn" data-service="Boarding">Book Daycare</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section why-us-section">
+        <div class="container">
+            <div class="grid grid-4">
+                <div class="feature-box">
+                    <i class="fa-solid fa-leaf"></i>
+                    <h4>100% Organic</h4>
+                    <p>Vet-approved clean ingredients without artificial fillers.</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h4>Express Delivery</h4>
+                    <p>Same-day doorstep delivery within 2 hours in selected cities.</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fa-solid fa-headset"></i>
+                    <h4>24/7 Tele-Vet</h4>
+                    <p>Instant video consultation with qualified veterinary experts.</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    <h4>14-Day Returns</h4>
+                    <p>Hassle-free exchange policy on unopened gear & supplies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-sub">Happy Stories</span>
+                <h2 class="section-title">What Pet Parents Say</h2>
+            </div>
+            <div class="grid grid-3">
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>"The grain-free salmon kibble completely solved Bruno's sensitive stomach issues. Super fast 2-hour delivery too!"</p>
+                    <div class="user-info">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Ananya S.">
+                        <div>
+                            <strong>Ananya S. & Bruno</strong>
+                            <span class="verified"><i class="fa-solid fa-circle-check"></i> Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>"Brought Milo for the full spa grooming session. He came out looking like a royalty and super calm. Highly recommended!"</p>
+                    <div class="user-info">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Rahul M.">
+                        <div>
+                            <strong>Rahul M. & Milo</strong>
+                            <span class="verified"><i class="fa-solid fa-circle-check"></i> Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>"The orthopedic bed quality is top notch. Luna sleeps through the night now! PAWSPHERE is my go-to store forever."</p>
+                    <div class="user-info">
+                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" alt="Priya K.">
+                        <div>
+                            <strong>Priya K. & Luna</strong>
+                            <span class="verified"><i class="fa-solid fa-circle-check"></i> Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section newsletter-section">
+        <div class="container text-center">
+            <div class="newsletter-card">
+                <i class="fa-solid fa-paper-plane newsletter-icon"></i>
+                <h2>Join the Pawsphere VIP Club!</h2>
+                <p>Subscribe to receive monthly pet wellness tips, secret sale alerts, and <strong>15% OFF</strong> your first order.</p>
+                <form id="newsletterForm" class="newsletter-form">
+                    <div class="form-group-inline">
+                        <input type="email" id="newsletterEmail" placeholder="Enter your email address..." required>
+                        <button type="submit" class="btn btn-primary">Subscribe Now</button>
+                    </div>
+                    <div id="newsletterMessage" class="form-msg"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-4 footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="brand-logo footer-logo">
+                        <i class="fa-solid fa-paw logo-icon"></i>
+                        <span class="logo-text">PAWS<span class="logo-accent">PHERE</span></span>
+                    </a>
+                    <p>Your premium boutique for vet-approved nutrition, ergonomic gear, luxury grooming, and pet adoption programs.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#shop">Shop Supplies</a></li>
+                        <li><a href="#services">Pet Spa & Vet</a></li>
+                        <li><a href="#adoption">Adoption Center</a></li>
+                        <li><a href="#offers">Carnival Offers</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">14-Day Returns</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get In Touch</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> 45 Pet Care Boulevard, Indiranagar, Bengaluru</p>
+                    <p><i class="fa-solid fa-envelope"></i> care@pawsphere.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 (800) 729-7743</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PAWSPHERE Boutique. All Rights Reserved. Designed with care for pet lovers.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Side Drawer -->
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="drawer-header">
+            <h3><i class="fa-solid fa-bag-shopping"></i> Your Shopping Bag (<span id="drawerCartCount">0</span>)</h3>
+            <button class="close-btn" id="closeCartBtn">&times;</button>
+        </div>
+        <div class="drawer-body" id="cartItemsContainer">
+            <!-- Dynamic Cart Items -->
+        </div>
+        <div class="drawer-footer">
+            <div class="cart-summary">
+                <div class="summary-row"><span>Subtotal:</span><span id="cartSubtotal">₹0</span></div>
+                <div class="summary-row"><span>Estimated Shipping:</span><span class="text-mint">FREE</span></div>
+                <div class="summary-row total-row"><span>Total:</span><span id="cartTotal">₹0</span></div>
+            </div>
+            <button class="btn btn-primary btn-block" id="checkoutBtn"><i class="fa-solid fa-lock"></i> Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <button class="close-btn modal-close" id="closeBookingModal">&times;</button>
+            <div class="modal-header">
+                <h2><i class="fa-regular fa-calendar-check text-accent"></i> Book Pet Care Session</h2>
+                <p>Schedule a professional appointment with our grooming & veterinary specialists.</p>
+            </div>
+            <form id="bookingForm" class="modal-form">
+                <div class="form-group">
+                    <label>Pet Name & Type</label>
+                    <input type="text" id="bookPetInfo" placeholder="e.g., Bruno (Golden Retriever Dog)" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Select Service</label>
+                        <select id="bookServiceType" required>
+                            <option value="Grooming">Full Spa & Grooming</option>
+                            <option value="Vet Consult">Veterinary Consultation</option>
+                            <option value="Boarding">Daycare & Boarding</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred Date</label>
+                        <input type="date" id="bookDate" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Your Name & Contact Number</label>
+                    <input type="text" id="bookOwnerContact" placeholder="e.g., Ananya (+91 9876543210)" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Confirm Appointment</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Adoption Modal -->
+    <div class="modal" id="adoptionModal">
+        <div class="modal-content modal-lg">
+            <button class="close-btn modal-close" id="closeAdoptionModal">&times;</button>
+            <div class="modal-header">
+                <h2><i class="fa-solid fa-heart text-accent"></i> Rescued Pets Seeking Homes</h2>
+                <p>All pets are fully vaccinated, microchipped, and ready for adoption!</p>
+            </div>
+            <div class="grid grid-3" id="adoptionGrid">
+                <div class="adoption-card">
+                    <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=400&q=80" alt="Rescued Pup">
+                    <div class="adoption-info">
+                        <h4>Cookie <span class="gender-badge">Male</span></h4>
+                        <p>Labrador Mix | 4 Months Old</p>
+                        <button class="btn btn-sm btn-outline btn-block adopt-now-btn" data-name="Cookie">Apply to Adopt</button>
+                    </div>
+                </div>
+                <div class="adoption-card">
+                    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=400&q=80" alt="Rescued Cat">
+                    <div class="adoption-info">
+                        <h4>Cleo <span class="gender-badge">Female</span></h4>
+                        <p>Persian Mix | 6 Months Old</p>
+                        <button class="btn btn-sm btn-outline btn-block adopt-now-btn" data-name="Cleo">Apply to Adopt</button>
+                    </div>
+                </div>
+                <div class="adoption-card">
+                    <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=400&q=80" alt="Rescued Pup">
+                    <div class="adoption-info">
+                        <h4>Rocky <span class="gender-badge">Male</span></h4>
+                        <p>Beagle Mix | 1 Year Old</p>
+                        <button class="btn btn-sm btn-outline btn-block adopt-now-btn" data-name="Rocky">Apply to Adopt</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Floating Button -->
+    <button class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
